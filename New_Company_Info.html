@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="New_Company_Info.css"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img class="home" src="WhiteHomeGrayBackground.jpg" alt=""/>
+        <h1 class="header">New Company Info</h1>
+        <div class="save">Save</div>
+    </div>
+
+
+
+    <div id='inputSection' class="inputSection">
+        <input class="name" type="text" placeholder="Name"/>
+        <input class="address" type="text" placeholder="Address"/>
+        <div class="cityState">
+            <input class="city" type="text" placeholder="City"/>
+            <input class="state" type="text" placeholder="State"/>
+        </div>
+        <input class="zip" type="number" placeholder="Zip Code"/>
+        <input class="phone" type="number" placeholder="Phone Number"/>
+
+        <div id="newInput"></div>
+        <div id='plus' class="plus">+</div>
+        <div class="addAttribute">Add Attribute</div>
+
+    </div>
+
+
+
+    <div class="menu">
+        <div class="section building">
+            <i class="fa fa-building-o companies"></i>
+            <p class="companies icon">Companies</p>
+        </div>
+        <div class="section">
+            <i class="fa fa-map-marker locations"></i>
+            <p class="locations icon">Locations</p>
+        </div>
+        <div class="section">
+            <i class="fa fa-suitcase departments"></i>
+            <p class="departments icon">Departments</p>
+        </div>
+        <div class="section">
+            <i class="fa fa-user employees"></i>
+            <p class="employees icon">Employees</p>
+        </div>
+        <div class="section">
+            <i class="fa fa-tasks tasks"></i>
+            <p class="tasks icon">Tasks</p>
+        </div>
+    </div>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function(){
+           var plus = document.getElementById('plus');
+
+           plus.addEventListener('click', function(){
+                   var input = document.getElementById('newInput');
+                   var newInput = document.createElement('input');
+                   input.appendChild(newInput);
+                   });
+        });
+
+    </script>
+</body>
+</html>
